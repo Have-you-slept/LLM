@@ -1,0 +1,14 @@
+py2neo
+fastapi
+zhipuai
+uvicorn
+gradio
+fuzzywuzzy
+langchain
+langchain-community
+langchain_core
+langchain_huggingface
+transformers==4.36.2
+chromadb
+sentence-transformers==2.3.1
+torch>=2.6.0
