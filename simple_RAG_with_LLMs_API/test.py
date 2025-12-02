@@ -205,7 +205,7 @@ if __name__ == "__main__":
             query = gr.Textbox(scale=5, show_label=False, placeholder="输入问题并按下回车键提交", container=False,
                                interactive=True)
             btn_upload = gr.UploadButton("📁 上传外挂数据库", file_types=['txt'], elem_id="upload-btn")
-            btn_neo4j = gr.Button(value="开关知识图谱（未开启）", elem_id="neo4j-btn")
+            btn_neo4j = gr.Button(value="开关知识图谱", elem_id="neo4j-btn")
 
         btn_neo4j.click(fn=btn_neo4j_click, inputs=[chatbot, neo4j_enabled],
                         outputs=[chatbot, neo4j_enabled, btn_neo4j], show_progress=True)
